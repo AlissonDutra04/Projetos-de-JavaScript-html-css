@@ -1,0 +1,6 @@
+.container {
+    display: flex; /* Define o elemento como um flex container */
+    justify-content: center; /* Centraliza os itens ao longo do eixo horizontal */
+    align-items: center; /* Centraliza os itens ao longo do eixo vertical */
+    height: 100vh; /* Define a altura do container como 100% da altura da janela de visualização (viewport height) */
+}

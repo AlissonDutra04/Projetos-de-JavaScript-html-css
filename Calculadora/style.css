@@ -1,0 +1,74 @@
+/* Define as propriedades de estilo para o corpo (body) da página */
+body {
+    overflow: hidden; /* Esconde a barra de rolagem vertical */
+    background: linear-gradient(#f4f4ed, white); /* Define um fundo gradiente que vai do cinza claro ao branco */
+}
+
+/* Define as propriedades de estilo para o elemento com a classe "container" */
+.container {
+    width: 95%; /* Define a largura do container como 95% da largura do viewport */
+    height: 100vh; /* Define a altura do container como 100% da altura do viewport */
+    margin: auto; /* Centraliza o container horizontalmente na página */
+    display: flex; /* Usa o modelo de layout flexível */
+    align-items: center; /* Centraliza os itens verticalmente dentro do container */
+    justify-content: center; /* Centraliza os itens horizontalmente dentro do container */
+}
+
+/* Define as propriedades de estilo para o elemento com a classe "calculator" */
+.calculator {
+    width: 370px; /* Define a largura da calculadora como 370 pixels */
+    margin: auto; /* Centraliza a calculadora horizontalmente na página */
+    border-radius: 2px; /* Define o raio das bordas da calculadora */
+    background:  #f2f2f2; /* Define o fundo da calculadora como cinza claro */
+    padding: 15px 15px 20px 20px; /* Adiciona espaçamento interno à calculadora */
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra à calculadora */
+}
+
+/* Define as propriedades de estilo para o elemento com o id "user_input" */
+#user_input {
+    box-sizing: border-box; /* Faz com que a largura do input inclua a largura das bordas e do preenchimento */
+    width: 100%; /* Define a largura do input como 100% do seu contêiner pai */
+    padding: 40px 5px; /* Adiciona preenchimento ao input */
+    background: whitesmoke; /* Define o fundo do input como branco esfumaçado */
+    text-align: right; /* Alinha o texto à direita dentro do input */
+    direction: ltr; /* Define a direção do texto da esquerda para a direita */
+    outline: none; /* Remove o contorno do input quando focado */
+    border: none; /* Remove a borda do input */
+    font-size: 2rem; /* Define o tamanho da fonte do input */
+}
+
+/* Define as propriedades de estilo para os botões da calculadora */
+.btn {
+    width: 24%; /* Define a largura dos botões como 24% do seu contêiner pai */
+    height: 45px; /* Define a altura dos botões como 45 pixels */
+    border-radius: 1px; /* Define o raio das bordas dos botões */
+    border: none; /* Remove a borda dos botões */
+    outline: none; /* Remove o contorno dos botões quando focados */
+    margin-top: 3px; /* Adiciona margem superior aos botões */
+    background: whitesmoke; /* Define o fundo dos botões como branco esfumaçado */
+}
+
+/* Define as propriedades de estilo para o botão de igual */
+.btnEqual {
+    width: 99.2%; /* Define a largura do botão de igual como 99.2% do seu contêiner pai */
+    height: 45px; /* Define a altura do botão de igual como 45 pixels */
+    border-radius: 1px; /* Define o raio das bordas do botão de igual */
+    border: none; /* Remove a borda do botão de igual */
+    outline: none; /* Remove o contorno do botão de igual quando focado */
+    margin-top: 3px; /* Adiciona margem superior ao botão de igual */
+    background: whitesmoke; /* Define o fundo do botão de igual como branco esfumaçado */
+}
+
+/* Define as propriedades de estilo para os botões e botão de igual quando estão em hover */
+.btn:hover, .btnEqual:hover {
+    background-color: rgba(128, 128, 128, 0.1); /* Define uma cor de fundo mais clara quando os botões estão em hover */
+}
+
+/* Define as regras de mídia para ajustar o tamanho dos botões em telas menores */
+@media(max-width:480px) {
+    .btn { width: 23.4%; } /* Reduz a largura dos botões para 23.4% do seu contêiner pai em telas com largura máxima de 480 pixels */
+}
+
+@media(max-width:320px) {
+    .btn { width: 23%; } /* Reduz ainda mais a largura dos botões para 23% do seu contêiner pai em telas com largura máxima de 320 pixels */
+}
